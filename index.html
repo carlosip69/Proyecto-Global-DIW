@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deportes de Raqueta</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+    <header>
+      <img src="imagenes_video/logo/logo.png" alt="logo" />
+      <h2>RacketSport</h2>
+      <nav>
+        <a>¿Quiénes somos?</a>
+        <a>Contenido</a>
+        <a>Formulario</a>
+        <a>Raquetas</a>
+      </nav>
+    </header>
+
+    <div class="contenido">
+      <div class="introduccion">
+        <h2>¿Quiénes somos?</h2><br>
+        <p>
+          En <strong>RacketSport</strong> somos una empresa dedicada a organizar y ofrecer actividades de ocio y tiempo libre
+          orientadas a los deportes de raqueta. Nuestro objetivo es crear un espacio dinámico para todos los niveles: 
+          impartimos clases especializadas para quienes buscan aprender o perfeccionar su técnica de la mano de profesionales, y 
+          también ofrecemos la posibilidad de venir por libre alquilando nuestras pistas por horas para disfrutar de un partido al aire libre o en 
+          nuestras instalaciones con total libertad y flexibilidad.
+        </p> <br>
+        <h3>¿Donde nos puedes encontrar y donde alquilar pista?</h3>
+        <section class="introSinTitulo">
+          <img class="imagen" src="imagenes_video/agones.png" alt="imagen de agones" />
+          <p class="parrafo">
+            Nos encontramos en el polidepotivo de agones, pravia donde tenemos la pista de padel
+            fuera y la pista de tenis de mesa y bádminton dentro del polideportivo. Para utilizar
+            nuestras pistas nos puedes mandar tu informacion en el formulario de abjo del todo o 
+            en el mismo sitio de las pistas puedes alquilar la pista si hay horas libres.  
+          </p>
+          <video class="video" width="350px" height=auto controls>
+            <source src="imagenes_video/videoplayback.mp4" type="video/mp4">            
+        </video>
+        </section>
+      </div>
+      <div class="Badminton">
+        <h3>Bádminton</h3>
+        <section class="BadSinh3">
+          <p>
+            El bádminton es un deporte de raqueta dinámico e intenso que se
+            juega individualmente o en parejas en una pista dividida por una
+            red, con la particularidad de que no utiliza pelota sino un volante
+            o plumilla que debe ser golpeado antes de que toque el suelo.
+            Destaca por su ritmo vertiginoso y la rapidez de sus intercambios,
+            exigiendo a los jugadores un alto nivel de agilidad, reflejos,
+            coordinación y resistencia física para desplazar al rival en
+            partidos disputados habitualmente al mejor de tres sets de 21
+            puntos.
+          </p>
+          <img src="imagenes_video/badminton.png" alt="imagen de Badminton" />
+        </section>
+      </div>
+      <div class="TenisDeMesa">
+        <h3>Tenis de mesa</h3>
+        <section class="TenSinh3">          
+          <img
+            src="imagenes_video/tenisDeMesa.png"
+            alt="imagen de Tenis de mesa"
+          />
+          <p>
+            El tenis de mesa es un deporte de raqueta rápido y de alta precisión
+            que se juega sobre una mesa rígida dividida por una red, de forma
+            individual o en parejas. El objetivo consiste en golpear una pelota
+            ligera de celuloide o plástico con una pala pequeña para que bote en
+            el campo contrario, buscando que el rival no pueda devolverla.
+            Sobresale por la enorme velocidad de reacción que exige a los
+            jugadores y por la importancia de los efectos (spin) impartidos a la
+            pelota, requiriendo un control técnico excepcional, concentración
+            constante y agilidad táctica en partidos que se disputan
+            habitualmente al mejor de varios sets alcanzados a los 11 puntos.
+          </p>
+        </section>
+      </div>
+      <div class="Padel">
+        <h3>Pádel</h3>
+        <section class="PadSinh3">
+          <p>
+            El pádel es un deporte de raqueta muy dinámico y social que se juega
+            siempre en parejas sobre una pista rectangular cerrada por paredes o
+            cristales y dividida por una red. Su principal rasgo distintivo es
+            que las paredes forman parte activa del juego, permitiendo que la
+            pelota rebote en ellas para mantener la bola en movimiento y generar
+            puntos más largos y estratégicos. Se disputa con una pala rígida y
+            perforada junto a una pelota similar a la de tenis pero con menor
+            presión, requiriendo buena coordinación, compenetración en equipo y
+            colocación táctica por encima de la fuerza bruta, en partidos
+            organizados bajo un sistema de puntuación idéntico al del tenis
+            (juegos, sets y tie-breaks).
+          </p>
+          <img src="imagenes_video/padel.png" alt="imagen de Padel" />
+        </section>
+      </div>
+      <section class="contacto">
+      <h2>Inscríbete a nuestras actividades</h2>
+      <form action="index.html" class="formulario">
+        
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                
+        <label for="deporte">Deporte de interés:</label>
+        <select id="deporte" name="deporte">
+          <option value="badminton">Bádminton</option>
+          <option value="tenis-mesa">Tenis de mesa</option>
+          <option value="padel">Pádel</option>
+        </select>
+
+        <label for="Raquetas">Raquetas a alquilar:</label>
+        <select id="Raquetas" name="Raquetas">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+
+        <label for="tiempo">Tiempo de alquiler:</label>
+        <select id="tiempo" name="tiempo">
+          <option value="30">30 minutos</option>
+          <option value="60">1 hora</option>
+          <option value="90">1 hora y 30 minutos</option>
+          <option value="120">2 horas</option>          
+        </select>
+
+        <label for="dia">Dia:</label>
+        <input type="date" placeholder="Dia" required>
+
+        <p>
+          <strong>Horas de interes:</strong> 
+          <br> Estas horas son en las que estan disponibles, 
+          no es entre las horas que van a jugar. despues se 
+          le mandara un correo con las horas que alquilo la pista
+        </p>
+        <label for="horainicio">Inicio</label>
+        <input type="time" required>
+
+        <label for="horaFinal">Final</label>
+        <input type="time" required>
+
+
+        <button type="submit" class="btn-enviar">Enviar solicitud</button>
+      </form>
+    </section>
+
+    <section class="imagenes">
+      <h2>Raquetas disponibles:</h2>
+      <img src="imagenes_video/raquetas/raquetanormal.png" alt="Raqueta normal Badminton"/>
+      <img src="imagenes_video/raquetas/raquetayonex.png" alt="Raqueta profesional Badminton"/>
+      <img src="imagenes_video/raquetas/raquetatenismesa.png" alt="Raqueta Tenis de mesa"/>
+      <img src="imagenes_video/raquetas/raquetaprofesionalrenismesa.png" alt="Raqueta Tenis de mesa profesional"/>
+      <img src="imagenes_video/raquetas/raquetanormalpadel.png" alt="Raqueta Padel"/>
+      <img src="imagenes_video/raquetas/raquetaprofesionalpadel.png" alt="Raqueta Padel Profesional"/>
+    </section>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 RacketSport. Todos los derechos reservados.</p>
+      <div class="redes">
+        <img
+            src="imagenes_video/ig.png"
+            alt="imagen de Instagram logo"
+          />
+        <img
+            src="imagenes_video/facebook.png"
+            alt="imagen de Instagram logo"
+          /> 
+
+      </div>
+    </footer>
+  </body>
+</html>
